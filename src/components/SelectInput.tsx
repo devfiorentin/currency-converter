@@ -6,7 +6,7 @@ function SelectInput() {
   const [fromCurrency, setFromCurrency] = useState("BRL");
   const [toCurrency, setToCurrency] = useState("USD");
   const [amount, setAmount] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState(""); 
 
   const handleConversion = async () => {
     try {
