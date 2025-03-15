@@ -1,12 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
-import "../app.css";
+import "../App.css";
 
 function SelectInput() {
   const [fromCurrency, setFromCurrency] = useState("BRL");
   const [toCurrency, setToCurrency] = useState("USD");
   const [amount, setAmount] = useState("");
-  const [result, setResult] = useState(""); 
+  const [result, setResult] = useState("");
 
   const handleConversion = async () => {
     try {
