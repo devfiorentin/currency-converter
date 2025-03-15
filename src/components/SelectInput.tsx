@@ -27,9 +27,9 @@ function SelectInput() {
   };
 
   return (
-    <div className="p-10 flex items-center justify-center">
+    <div className="p-5 flex items-center justify-center md:p-5">
       <section className="bg-white rounded-2xl shadow-xl p-8">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">
           Conversor de Moedas
         </h1>
 
@@ -52,6 +52,7 @@ function SelectInput() {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               placeholder={`Digite o valor em ${fromCurrency}`}
+              required
             />
           </div>
 
